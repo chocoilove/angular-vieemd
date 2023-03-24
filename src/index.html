@@ -1,540 +1,934 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-  <title>My</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-</head>
-<body>
-  <script>
-    AOS.init();
-    var buttons = document.querySelectorAll('.btn')
-buttons.forEach(function (button) {
-  var button = new bootstrap.Button(button)
-  button.toggle()
-})
-  </script>
-  <app-root></app-root>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <title>My</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script>
+      AOS.init();
+      var buttons = document.querySelectorAll('.btn');
+      buttons.forEach(function (button) {
+        var button = new bootstrap.Button(button);
+        button.toggle();
+      });
+    </script>
+    <app-root></app-root>
+  </body>
 </html>
 
 <body>
-<header id="header" class="masthead">
-  <div class="container-fluid clear-padding">
-    <br><br><br><br><br><br>
-    <!-- <img src="assets/new4.png" class="center"> -->
-    <div class="wrapper">
-      <div class="wave one"></div>
-      <div class="wave two"></div>
-      <div class="wave three"></div>
-      <div class="title2"><img src="assets/new4.png" class="center2"></div>
-    </div>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: 	#D0D0D0;">
-      <i class="fa fa-caret-right fa-2x" style="font-size:24px; color: rgba(122, 27, 27, 0.634);"></i>
-      <a class="navbar-brand me" href="#" style="font-size: 22px;">個人網頁 </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- .navbar-toggler-icon 漢堡式選單Icon -->
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me">
-          <li class="nav-item active">
-            <a href="#about" class="nav-link active">關於我</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#skills" class="nav-link active">專業技能</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#educational" class="nav-link active">學歷</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#work" class="nav-link active">經歷</a>
-          </li>
-          <li class="nav-item active">
-            <a href="#contact" class="nav-link active">聯絡資訊</a>
-          </li>
-        </ul>
-      </div>
-      <!-- .navbar-toggler 漢堡式選單按鈕 -->
-      <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
-  <!-- 選單項目&漢堡式折疊選單 -->
-    </nav>
-  </div>
-  <div class="container h-50">
-    <div class="row h-80 align-items-center">
-      <div class="col-12 text-center text-white">
-        <h1 class="fw-light titlefont-size title-font title contact">
-          屬於我的個人履歷
-        </h1>
-      </div>
-    </div>
-  </div>
-</header>
-<section id="about" class="flex-shrink-0 pt-5 bg-light text-dark" data-aos="fade-down" data-aos-duration="1500">
-  <div class="container">
-
-    <div class="row text-center me">
-      <div class="col-6">
-        <br><h1 class="uline " style="font-weight: bold">Something About Me</h1>
-        <table class="table eboxshadow">
-          <tbody>
-            <tr>
-              <td scope="col"><img src="assets/name.png" width="30"> 姓名:</td>
-              <td scope="col">郭子逸</td>
-            </tr>
-            <tr>
-              <td scope="col"><img src="assets/degree.jpg" width="30"> 科系:</td>
-              <td scope="col">資訊工程學系</td>
-            </tr>
-            <tr>
-              <td scope="col"><img src="assets/inter.png" width="30"> 興趣:</td>
-              <td scope="col">彈鋼琴、聽歌</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-6">
-        <br><h1 class="uline2" style="font-weight: bold">關於我的點點滴滴</h1>
-        <p style="margin: 0" class="text-left eboxshadow2">
-          對於資訊類的事物倍感興趣，且對周圍的人事物具有好奇心
-          ，在影像處理這塊相有一定涉獵，在未來會繼續往碩士的方向邁進，希望可以找到自己真正感興趣的一片領域
-          ，對於未來也具備相當的野心。
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-<!-- 我的資料 -->
-<section id="skills" class="flex-shrink-0 pt-5 pb-5 bg-light text-dark">
-<div class="container text-center me" data-aos="fade-up" data-aos-duration="1500" ><br><br>
-  <div class="box-wrap">
-    <div class="border-layer"></div>
-    <div class="box-content"><h1 style="font-weight: bold" >專業技能</h1></div>
-  </div>
-  <div class="card text-dark">
-    <div class="card text-dark">
-      <div class="row">
-        <div class="col-6">
-          <div class="skill">
-            Python
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            Java
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            Android Studio
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            HTML & PHP & CSS
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            MySQL & Firebase
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            影像辨識
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-a  nimated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            Compiler
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            Arduino
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 62%">62%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            Illustrator & Photoshop
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="skill">
-            Pytorch & Keras
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 47%">47%</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%">35%</div>
-          </div>
+  <header id="header" class="masthead">
+    <div class="container-fluid clear-padding">
+      <br /><br /><br /><br /><br /><br />
+      <!-- <img src="assets/new4.png" class="center"> -->
+      <div class="wrapper">
+        <div class="wave one"></div>
+        <div class="wave two"></div>
+        <div class="wave three"></div>
+        <div class="title2">
+          <img
+            src="https://raw.githubusercontent.com/chocoilove/angular-vieemd/main/src/assets/new4.png"
+            class="center2"
+          />
         </div>
       </div>
-    </div>
-  </div>
-
-</div>
-
-</section>
-
-<section id="educational" class="flex-shrink-0 pt-5 bg-light text-dark">
-<!-- 我的資料 -->
-<div class="container me">
-  <br>
-  <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
-    <h1 class="uline3" style="font-weight: bold" >學歷</h1>
-    <div class="col-md-6 offset-md-3">
-      <div class="list-group" id="list-tab" role="tablist">
-
-        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
-          <img src="/assets/univer.png" class="rounded-circle" alt="" style="width: 45px; height: 45px" />大學
+      <nav
+        class="navbar navbar-expand-md navbar-light fixed-top"
+        style="background-color: #d0d0d0"
+      >
+        <i
+          class="fa fa-caret-right fa-2x"
+          style="font-size: 24px; color: rgba(122, 27, 27, 0.634)"
+        ></i>
+        <a class="navbar-brand me" href="#" style="font-size: 22px"
+          >個人網頁
         </a>
-        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
-          <img src="/assets/high.png" class="rounded-circle" alt="" style="width: 45px; height: 45px" />高中
-        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- .navbar-toggler-icon 漢堡式選單Icon -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me">
+            <li class="nav-item active">
+              <a href="#about" class="nav-link active">關於我</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#skills" class="nav-link active">專業技能</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#educational" class="nav-link active">學歷</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#work" class="nav-link active">經歷</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#contact" class="nav-link active">聯絡資訊</a>
+            </li>
+          </ul>
+        </div>
+        <!-- .navbar-toggler 漢堡式選單按鈕 -->
+        <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+        <!-- 選單項目&漢堡式折疊選單 -->
+      </nav>
+    </div>
+    <div class="container h-50">
+      <div class="row h-80 align-items-center">
+        <div class="col-12 text-center text-white">
+          <h1 class="fw-light titlefont-size title-font title contact">
+            屬於我的個人履歷
+          </h1>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 offset-md-3">
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-          <div class="education cjcubox">
-            <ul class="edubox">
-              <li class="pt-2 text-center">
-                <img src="/assets/cjcu.png" class="cjcu">
-                <p><strong>學位:</strong> 資訊工程學系</p>
-                <p><strong>專業:</strong> 影像處理、網頁設計、APP開發</p>
-                <p><strong>學校:</strong> 長榮大學</p>
-                <p><strong>時間:</strong> 2019 ~ 2023</p>
-              </li>
-            </ul>
-          </div>
+  </header>
+  <section
+    id="about"
+    class="flex-shrink-0 pt-5 bg-light text-dark"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+  >
+    <div class="container">
+      <div class="row text-center me">
+        <div class="col-6">
+          <br />
+          <h1 class="uline" style="font-weight: bold">Something About Me</h1>
+          <table class="table eboxshadow">
+            <tbody>
+              <tr>
+                <td scope="col">
+                  <img src="assets/name.png" width="30" /> 姓名:
+                </td>
+                <td scope="col">郭子逸</td>
+              </tr>
+              <tr>
+                <td scope="col">
+                  <img src="assets/degree.jpg" width="30" /> 科系:
+                </td>
+                <td scope="col">資訊工程學系</td>
+              </tr>
+              <tr>
+                <td scope="col">
+                  <img src="assets/inter.png" width="30" /> 興趣:
+                </td>
+                <td scope="col">彈鋼琴、聽歌</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-          <div class="education cjcubox">
-            <ul>
-              <li class="pt-2">
-                <img src="/assets/kmsh.png" class="cjcu">
-                <p><strong>組別:</strong> 自然組</p>
-                <p><strong>專業:</strong> 電腦科學、數學、自然</p>
-                <p><strong>學校:</strong> 港明中學</p>
-                <p><strong>時間:</strong> 2017 ~ 2019</p>
-              </li>
-            </ul>
+        <div class="col-6">
+          <br />
+          <h1 class="uline2" style="font-weight: bold">關於我的點點滴滴</h1>
+          <p style="margin: 0" class="text-left eboxshadow2">
+            對於資訊類的事物倍感興趣，且對周圍的人事物具有好奇心
+            ，在影像處理這塊相有一定涉獵，在未來會繼續往碩士的方向邁進，希望可以找到自己真正感興趣的一片領域
+            ，對於未來也具備相當的野心。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 我的資料 -->
+  <section id="skills" class="flex-shrink-0 pt-5 pb-5 bg-light text-dark">
+    <div
+      class="container text-center me"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <br /><br />
+      <div class="box-wrap">
+        <div class="border-layer"></div>
+        <div class="box-content">
+          <h1 style="font-weight: bold">專業技能</h1>
+        </div>
+      </div>
+      <div class="card text-dark">
+        <div class="card text-dark">
+          <div class="row">
+            <div class="col-6">
+              <div class="skill">Python</div>
+            </div>
+            <div class="col-6">
+              <div class="skill">Java</div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                >
+                  60%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 75%"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill">Android Studio</div>
+            </div>
+            <div class="col-6">
+              <div class="skill">HTML & PHP & CSS</div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 80%"
+                >
+                  80%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 85%"
+                >
+                  85%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill">MySQL & Firebase</div>
+            </div>
+            <div class="col-6">
+              <div class="skill">影像辨識</div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-a
+                    nimated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 65%"
+                >
+                  65%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 50%"
+                >
+                  50%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill">Compiler</div>
+            </div>
+            <div class="col-6">
+              <div class="skill">Arduino</div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 40%"
+                >
+                  40%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 62%"
+                >
+                  62%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill">Illustrator & Photoshop</div>
+            </div>
+            <div class="col-6">
+              <div class="skill">Pytorch & Keras</div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 47%"
+                >
+                  47%
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="progress">
+                <div
+                  class="
+                    progress-bar progress-bar-striped progress-bar-animated
+                  "
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 35%"
+                >
+                  35%
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-</section>
-<section id="work" class="flex-shrink-0 pt-5 bg-light text-dark">
-<div class="container">
-<br><br><h2 class="text-center itembox" style="font-weight: bold" data-aos="fade-down" data-aos-duration="1500">經歷/作品集</h2><br>
-<!-- 經歷表格 -->
-<div class="bg-overlay containerCount blockbg" data-contentshape="auto" data-space="no-gutters" data-borderradius="0px" data-image="" data-imagemobile="">
-  <div class="container ">
-      <div class="row justify-content-center">
-          <div class="col-md pb-small ">
+  <section id="educational" class="flex-shrink-0 pt-5 bg-light text-dark">
+    <!-- 我的資料 -->
+    <div class="container me">
+      <br />
+      <div class="row text-center" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="uline3" style="font-weight: bold">學歷</h1>
+        <div class="col-md-6 offset-md-3">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a
+              class="list-group-item list-group-item-action active"
+              id="list-home-list"
+              data-toggle="list"
+              href="#list-home"
+              role="tab"
+              aria-controls="home"
+            >
+              <img
+                src="/assets/univer.png"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+              />大學
+            </a>
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#list-profile"
+              role="tab"
+              aria-controls="profile"
+            >
+              <img
+                src="/assets/high.png"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+              />高中
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 offset-md-3">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-home"
+              role="tabpanel"
+              aria-labelledby="list-home-list"
+            >
+              <div class="education cjcubox">
+                <ul class="edubox">
+                  <li class="pt-2 text-center">
+                    <img src="/assets/cjcu.png" class="cjcu" />
+                    <p><strong>學位:</strong> 資訊工程學系</p>
+                    <p><strong>專業:</strong> 影像處理、網頁設計、APP開發</p>
+                    <p><strong>學校:</strong> 長榮大學</p>
+                    <p><strong>時間:</strong> 2019 ~ 2023</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-profile"
+              role="tabpanel"
+              aria-labelledby="list-profile-list"
+            >
+              <div class="education cjcubox">
+                <ul>
+                  <li class="pt-2">
+                    <img src="/assets/kmsh.png" class="cjcu" />
+                    <p><strong>組別:</strong> 自然組</p>
+                    <p><strong>專業:</strong> 電腦科學、數學、自然</p>
+                    <p><strong>學校:</strong> 港明中學</p>
+                    <p><strong>時間:</strong> 2017 ~ 2019</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="flex-shrink-0 pt-5 bg-light text-dark">
+    <div class="container">
+      <br /><br />
+      <h2
+        class="text-center itembox"
+        style="font-weight: bold"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        經歷/作品集
+      </h2>
+      <br />
+      <!-- 經歷表格 -->
+      <div
+        class="bg-overlay containerCount blockbg"
+        data-contentshape="auto"
+        data-space="no-gutters"
+        data-borderradius="0px"
+        data-image=""
+        data-imagemobile=""
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md pb-small">
               <div class="row justify-content-center no-gutters">
-<div class="col-md" data-aos="fade-down" data-aos-duration="1500">
-<div class="content blockbg pl-small pr-small " style="min-height: auto; border-radius: 0px;">
-  <div class="box_industries">
-    <div class="image">
-      <img src="/assets/chatai.png" class="img-fluid">
-      <div class="card-img-overlay d-flex align-items-center justify-content-center">
-        </div>
-        </div>
-       <div class="content content1" style="min-height: auto; border-radius: 0px;">
-<div class="card-img-overlay d-flex align-items-center justify-content-center" style="width:80%; left:10%;">
-<div><h3 style="color: #fff; ">聊天機器人與社群</h3>
-<p style="color:#fff;">互動看板、自然語言處理、職缺推薦、數據蒐集、職缺推薦分析</p>
-<!-- Button聊天機器人 -->
-<button type="button" class="btn-bgd2" data-toggle="modal" data-target="#exampleModalCenter">
-了解更多
-</button>
-<!--
+                <div
+                  class="col-md"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="content blockbg pl-small pr-small"
+                    style="min-height: auto; border-radius: 0px"
+                  >
+                    <div class="box_industries">
+                      <div class="image">
+                        <img src="/assets/chatai.png" class="img-fluid" />
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        class="content content1"
+                        style="min-height: auto; border-radius: 0px"
+                      >
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                          style="width: 80%; left: 10%"
+                        >
+                          <div>
+                            <h3 style="color: #fff">聊天機器人與社群</h3>
+                            <p style="color: #fff">
+                              互動看板、自然語言處理、職缺推薦、數據蒐集、職缺推薦分析
+                            </p>
+                            <!-- Button聊天機器人 -->
+                            <button
+                              type="button"
+                              class="btn-bgd2"
+                              data-toggle="modal"
+                              data-target="#exampleModalCenter"
+                            >
+                              了解更多
+                            </button>
+                            <!--
 <a href="https://aics.advantech.com/zh/storevue/" target="_blank"><button class="btn-bgd2"><span style="display:block; margin-top:2px; ">了解更多</span></button></a>
 -->
-</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="content blockbg pl-small pr-small"
+                    style="min-height: auto; border-radius: 0px"
+                  >
+                    <div class="box_industries">
+                      <div class="image">
+                        <img src="/assets/醫療網頁.png" class="img-fluid" />
 
-</div>
-
-       </div>
-   </div>
-      </div>
-</div><div class="col-md" data-aos="fade-down" data-aos-duration="1500">
-      <div class="content blockbg pl-small pr-small " style="min-height: auto; border-radius: 0px;">
-          <div class="box_industries">
-       <div class="image">
-           <img src="/assets/醫療網頁.png" class="img-fluid">
-
-<div class="card-img-overlay d-flex align-items-center justify-content-center">
-</div>
-
-       </div>
-       <div class="content content2" style="min-height: auto; border-radius: 0px;">
-
-
-<div class="card-img-overlay d-flex align-items-center justify-content-center" style="width:80%; left:10%;">
-<div><h3 style="color: #fff; ">資訊醫療跨領域結合</h3>
-  <p style="color:#fff;">影像辨識器材位置、即時更新網頁、耗材庫存管理、實地物品提取偵測</p>
-  <!-- Button醫療 -->
-<button type="button" class="btn-bgd2" data-toggle="modal" data-target="#exampleModalCenter2">
-了解更多
-</button>
-  <!--
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        class="content content2"
+                        style="min-height: auto; border-radius: 0px"
+                      >
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                          style="width: 80%; left: 10%"
+                        >
+                          <div>
+                            <h3 style="color: #fff">資訊醫療跨領域結合</h3>
+                            <p style="color: #fff">
+                              影像辨識器材位置、即時更新網頁、耗材庫存管理、實地物品提取偵測
+                            </p>
+                            <!-- Button醫療 -->
+                            <button
+                              type="button"
+                              class="btn-bgd2"
+                              data-toggle="modal"
+                              data-target="#exampleModalCenter2"
+                            >
+                              了解更多
+                            </button>
+                            <!--
     <a href="https://aics.advantech.com/zh/cityservice/" target="_blank"><button class="btn-bgd2" style="cursor:default;"><span style="display:block; margin-top:2px; ">了解更多</span></button></a>
   -->
-</div>
-
-       </div>
-       </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-</div>
-<div class="bg-overlay containerCount blockbg" data-contentshape="auto" data-space="no-gutters" data-borderradius="0px" data-image="" data-imagemobile="">
-<div class="container ">
-    <div class="row justify-content-center">
-        <div class="col-md pb-small ">
-            <div class="row justify-content-center no-gutters">
-<div class="col-md py-5" data-aos="fade-up" data-aos-duration="1500">
-<div class="content blockbg pl-small pr-small " style="min-height: auto; border-radius: 0px;">
-<div class="box_industries">
-  <div class="image">
-    <img src="/assets/APP2.png" class="img-fluid">
-    <div class="card-img-overlay d-flex align-items-center justify-content-center">
-      </div>
-      </div>
-     <div class="content content1" style="min-height: auto; border-radius: 0px;">
-<div class="card-img-overlay d-flex align-items-center justify-content-center" style="width:80%; left:10%;">
-<div><h3 style="color: #fff; ">手機點餐APP開發</h3>
-<p style="color:#fff;">餐點選擇、輕鬆小遊戲、事先訂位系統、抽獎系統、餐廳位置地圖跳轉</p>
-<!--
+      <div
+        class="bg-overlay containerCount blockbg"
+        data-contentshape="auto"
+        data-space="no-gutters"
+        data-borderradius="0px"
+        data-image=""
+        data-imagemobile=""
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md pb-small">
+              <div class="row justify-content-center no-gutters">
+                <div
+                  class="col-md py-5"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="content blockbg pl-small pr-small"
+                    style="min-height: auto; border-radius: 0px"
+                  >
+                    <div class="box_industries">
+                      <div class="image">
+                        <img src="/assets/APP2.png" class="img-fluid" />
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        class="content content1"
+                        style="min-height: auto; border-radius: 0px"
+                      >
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                          style="width: 80%; left: 10%"
+                        >
+                          <div>
+                            <h3 style="color: #fff">手機點餐APP開發</h3>
+                            <p style="color: #fff">
+                              餐點選擇、輕鬆小遊戲、事先訂位系統、抽獎系統、餐廳位置地圖跳轉
+                            </p>
+                            <!--
 <a href="https://aics.advantech.com/zh/storevue/" target="_blank"><button class="btn-bgd2"><span style="display:block; margin-top:2px; ">了解更多</span></button></a>
 -->
-<!-- Button APP -->
-<button type="button" class="btn-bgd2" data-toggle="modal" data-target="#exampleModalCenter3">
-了解更多
-</button>
-</div>
+                            <!-- Button APP -->
+                            <button
+                              type="button"
+                              class="btn-bgd2"
+                              data-toggle="modal"
+                              data-target="#exampleModalCenter3"
+                            >
+                              了解更多
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-md py-5"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <div
+                    class="content blockbg pl-small pr-small"
+                    style="min-height: auto; border-radius: 0px"
+                  >
+                    <div class="box_industries">
+                      <div class="image">
+                        <img src="/assets/arduino.png" class="img-fluid" />
 
-</div>
-
-     </div>
- </div>
-    </div>
-</div><div class="col-md py-5" data-aos="fade-up" data-aos-duration="1500">
-    <div class="content blockbg pl-small pr-small " style="min-height: auto; border-radius: 0px;">
-        <div class="box_industries">
-     <div class="image">
-         <img src="/assets/arduino.png" class="img-fluid">
-
-<div class="card-img-overlay d-flex align-items-center justify-content-center">
-</div>
-
-     </div>
-     <div class="content content2" style="min-height: auto; border-radius: 0px;">
-
-
-<div class="card-img-overlay d-flex align-items-center justify-content-center" style="width:80%; left:10%;">
-<div><h3 style="color: #fff; ">廁所衛生警示系統</h3>
-<p style="color:#fff;">即時環境數值偵測、人力調度管控效率提升、簡易裝置架設、網頁後端數值查看、監測打掃成效好壞</p>
-<!-- Button衛生 -->
-<button type="button" style="cursor:default;" class="btn-bgd2" data-toggle="modal" data-target="#exampleModalCenter4">
-<span style="display:block; margin-top:2px; ">了解更多</span>
-</button>
-<!--
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        ></div>
+                      </div>
+                      <div
+                        class="content content2"
+                        style="min-height: auto; border-radius: 0px"
+                      >
+                        <div
+                          class="
+                            card-img-overlay
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                          style="width: 80%; left: 10%"
+                        >
+                          <div>
+                            <h3 style="color: #fff">廁所衛生警示系統</h3>
+                            <p style="color: #fff">
+                              即時環境數值偵測、人力調度管控效率提升、簡易裝置架設、網頁後端數值查看、監測打掃成效好壞
+                            </p>
+                            <!-- Button衛生 -->
+                            <button
+                              type="button"
+                              style="cursor: default"
+                              class="btn-bgd2"
+                              data-toggle="modal"
+                              data-target="#exampleModalCenter4"
+                            >
+                              <span style="display: block; margin-top: 2px"
+                                >了解更多</span
+                              >
+                            </button>
+                            <!--
   <a href="https://aics.advantech.com/zh/cityservice/" target="_blank"><button class="btn-bgd2" style="cursor:default;"><span style="display:block; margin-top:2px; ">了解更多</span></button></a>
 -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="flex-shrink-0 py-4 back text-dark">
+    <div class="container" data-aos="fade-in" data-aos-duration="2000">
+      <h3 class="text-center contact" style="margin: 0">
+        聯絡方式(Contact With Me)
+      </h3>
+      <p class="text-center contact" style="margin: 0">
+        行動電話(Phone) : 0984300180
+      </p>
+      <p class="text-center contact" style="margin: 0">
+        電子信箱(Email) : 108B09168@mailst.cjcu.edu.tw
+      </p>
+      <div class="d-flex flex-row text-center justify-content-around">
+        <div>
+          <a href="https://zh-tw.facebook.com/  "
+            ><i class="fa fa-facebook fa-2x pr-2"></i
+          ></a>
+          <a
+            href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjh7ITmlsn9AhWZsFYBHZF4AXIQPAgI"
+            ><i class="fa fa-google fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.youtube.com/?gl=TW&hl=zh-tw"
+            ><i class="fa fa-youtube fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
-
-     </div>
-     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-</div>
-</div>
-
-
-</section>
-<section id="contact" class="flex-shrink-0 py-4 back text-dark">
-<div class="container" data-aos="fade-in" data-aos-duration="2000">
-  <h3 class="text-center contact" style="margin: 0">聯絡方式(Contact With Me)</h3>
-  <p class="text-center contact" style="margin: 0">行動電話(Phone) : 0984300180</p>
-  <p class="text-center contact"  style="margin: 0">電子信箱(Email) : 108B09168@mailst.cjcu.edu.tw</p>
-  <div class="d-flex flex-row text-center justify-content-around">
-    <div>
-      <a href="https://zh-tw.facebook.com/  "><i class="fa fa-facebook fa-2x pr-2"></i></a>
-      <a href="https://www.google.com/webhp?hl=zh-TW&sa=X&ved=0ahUKEwjh7ITmlsn9AhWZsFYBHZF4AXIQPAgI"><i class="fa fa-google fa-2x"></i></a>
-      <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>
-      <a href="https://www.youtube.com/?gl=TW&hl=zh-tw"><i class="fa fa-youtube fa-2x"></i></a>
+  <!-- 聊天機器人 彈跳視窗內容 -->
+  <div
+    class="modal fade"
+    id="exampleModalCenter"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title divpop" id="exampleModalCenterTitle">
+            <img src="/assets/robot.png" class="limg" />詳細內容
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body divpop2">
+          1.透過自然語言處理(NLP)技術製作機器人來做答覆<br />
+          2.根據自然語言處理得出的分析結果給出最佳職缺選擇<br />
+          3.搭配政府課程推薦使用者參加<br />
+          4.具備社群與其他用戶討論心得<br />
+        </div>
+        <img src="/assets/社群.png" class="img-fluid" />
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</section>
-
-
-<!-- 聊天機器人 彈跳視窗內容 -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title divpop" id="exampleModalCenterTitle"><img src="/assets/robot.png" class="limg">詳細內容</h4>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body divpop2">
-      1.透過自然語言處理(NLP)技術製作機器人來做答覆<br>
-      2.根據自然語言處理得出的分析結果給出最佳職缺選擇<br>
-      3.搭配政府課程推薦使用者參加<br>
-      4.具備社群與其他用戶討論心得<br>
-    </div>
-    <img src="/assets/社群.png" class="img-fluid">
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-</div>
-<!-- 資訊醫療跨領域結合 視窗內容 -->
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title divpop" id="exampleModalCenterTitle"><img src="/assets/med.png" class="limg">詳細內容</h4>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body divpop2">
-      1.透過影像辨識大型器材即時位置<br>
-      2.提供倉儲人員清單確認當前耗材剩餘數量<br>
-      3.具備簡易風格網頁讓醫護人員選取所需物品和得知物品位置<br>
-      4.硬體ESP32與LED燈搭配使物品實際擺放位置更好察覺<br>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <!-- 資訊醫療跨領域結合 視窗內容 -->
+  <div
+    class="modal fade"
+    id="exampleModalCenter2"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title divpop" id="exampleModalCenterTitle">
+            <img src="/assets/med.png" class="limg" />詳細內容
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body divpop2">
+          1.透過影像辨識大型器材即時位置<br />
+          2.提供倉儲人員清單確認當前耗材剩餘數量<br />
+          3.具備簡易風格網頁讓醫護人員選取所需物品和得知物品位置<br />
+          4.硬體ESP32與LED燈搭配使物品實際擺放位置更好察覺<br />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<!-- 手機點餐APP開發 彈跳視窗內容 -->
-<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title divpop" id="exampleModalCenterTitle"><img src="/assets/food.png" class="limg">詳細內容</h4>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body divpop2">
-      1.時尚風格菜單設計<br>
-      2.購後抽抽樂小遊戲提供娛樂<br>
-      3.事前訂位一併查看餐廳位置<br>
-      4.餐點挑選任意更改<br>
-    </div>
-    <img src="/assets/map.png" class="img-fluid">
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
-</div>
-<!-- 廁所衛生警示系統 彈跳視窗內容 -->
-<div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title divpop" id="exampleModalCenterTitle"><img src="/assets/health.png" class="limg">詳細內容</h4>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body divpop2">
-      1.環境數值即時回傳<br>
-      2.網頁圖示一目了然當然狀況<br>
-      3.員工打卡上下班時間精準確認<br>
-      4.清潔後成效更容易判斷<br>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <!-- 手機點餐APP開發 彈跳視窗內容 -->
+  <div
+    class="modal fade"
+    id="exampleModalCenter3"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title divpop" id="exampleModalCenterTitle">
+            <img src="/assets/food.png" class="limg" />詳細內容
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body divpop2">
+          1.時尚風格菜單設計<br />
+          2.購後抽抽樂小遊戲提供娛樂<br />
+          3.事前訂位一併查看餐廳位置<br />
+          4.餐點挑選任意更改<br />
+        </div>
+        <img src="/assets/map.png" class="img-fluid" />
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+  <!-- 廁所衛生警示系統 彈跳視窗內容 -->
+  <div
+    class="modal fade"
+    id="exampleModalCenter4"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title divpop" id="exampleModalCenterTitle">
+            <img src="/assets/health.png" class="limg" />詳細內容
+          </h4>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body divpop2">
+          1.環境數值即時回傳<br />
+          2.網頁圖示一目了然當然狀況<br />
+          3.員工打卡上下班時間精準確認<br />
+          4.清潔後成效更容易判斷<br />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
-
