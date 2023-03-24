@@ -9,8 +9,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family:微軟正黑;
-  font-size:22px;
+  font-family: 微軟正黑;
+  font-size: 22px;
 }
 /*--------------------------------------------------------------
 大頭貼
@@ -19,65 +19,71 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:30%;
+  width: 30%;
 }
 .center2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:80%;
+  width: 80%;
 }
-.circle{
+.circle {
   border-bottom-left-radius: 100%;
-  border-bottom-right-radius:100%;
-  position:relative;
-  overflow:hidden;
+  border-bottom-right-radius: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.title{
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif,標楷體;
+.title {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
+    'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo,
+    sans-serif, 標楷體;
   color: inherit;
 }
 /*--------------------------------------------------------------
 我的資料
 --------------------------------------------------------------*/
-.me{
-    font-family: "Times New Roman",標楷體;
-    font-size:x-large
+.me {
+  font-family: 'Times New Roman', 標楷體;
+  font-size: x-large;
 }
 
-/*補title裡面字體的樣式*/
 /*補title裡面字體的樣式*/
 .menu .title span {
   color: #ffffff;
   margin-left: 20px;
+  border-radius: 10%;
 }
 
 .menu ul li {
-  color: #ffffff;
-  transition: 0.25s;
+  color: #981919;
+  transition: 0.1s;
+  border-radius: 10%;
 }
 
 .menu ul li:hover {
-  background-color: #e29e9e;
-  color: #4a4a4a;
+  border-radius: 10%;
+  background-color: #b8b8b889;
+  color: #4d0808;
 }
 /*--------------------------------------------------------------
 專業能力
 --------------------------------------------------------------*/
-.skill{
+.skill {
   font-family: 'Noto Sans TC', sans-serif;
-  font-size:22px;
+  font-size: 22px;
   text-align: left;
 }
 
 /*--------------------------------------------------------------
 # 聯絡資訊
 --------------------------------------------------------------*/
-.back{
-  background-color:#E0E0E0;
+.back {
+  background-color: #e0e0e0;
 }
-.contact{
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+.contact {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
+    'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo,
+    sans-serif;
   color: inherit;
 }
 .fa {
@@ -88,32 +94,31 @@
   text-decoration: none;
 }
 /* Facebook顏色 */
-.text-1 img{
-  width:100%;
+.text-1 img {
+  width: 100%;
 }
 
-.text-2 img{
-  width:10%;
+.text-2 img {
+  width: 10%;
 }
-
 
 /*--------------------------------------------------------------
 # 經歷方格
 --------------------------------------------------------------*/
-.image img{
-width:100%;
-height: 80mm;
+.image img {
+  width: 100%;
+  height: 80mm;
 }
-.box_industries{
+.box_industries {
   overflow: hidden;
   position: relative;
-border-radius:15px;
+  border-radius: 15px;
 }
 
-.box_industries .content{
+.box_industries .content {
   background: #0168b4;
   bottom: -100%;
-  color:  #fff;
+  color: #fff;
   height: 100%;
   left: 0%;
   text-align: center;
@@ -121,8 +126,7 @@ border-radius:15px;
   transition: bottom 0.5s ease;
   width: 100%;
 }
-.box_industries:hover .content
-{
+.box_industries:hover .content {
   bottom: 0%;
 }
 .box_industries .image {
@@ -133,95 +137,92 @@ border-radius:15px;
   transform: translateY(-100%);
 }
 .btn-bgd {
-    border: 1px solid #fff;
-    background-color: #FD5722;
-    color: #fff;
-padding: 8px 28px;
- transition: 0.3s;
+  border: 1px solid #fff;
+  background-color: #fd5722;
+  color: #fff;
+  padding: 8px 28px;
+  transition: 0.3s;
 }
-
 
 .btn-bgd2 {
-    border-radius: 2px!important;
-    border: 1px solid #fff;
-    background-color: transparent;
-    color: #fff;
-padding: 8px 28px;
- transition: 0.3s;
-    min-width: 124px!important;
+  border-radius: 2px !important;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 28px;
+  transition: 0.3s;
+  min-width: 124px !important;
 }
 .btn-bgd2:hover {
-    background-color: #044681;
- transition: 0.3s;
+  background-color: #044681;
+  transition: 0.3s;
 }
-@media (max-width: 768px){
-.box_industries{
+@media (max-width: 768px) {
+  .box_industries {
     margin-bottom: 30px;
-}
+  }
   .box_industries .content {
-      bottom: 0%;
-    }
+    bottom: 0%;
+  }
   .box_industries .content h3 {
-      font-size: 21px;
-    }
+    font-size: 21px;
+  }
   .box_industries .content p {
-      font-size: 15px;
-    }
-/*--------------------------------------------------------------
+    font-size: 15px;
+  }
+  /*--------------------------------------------------------------
 # 經歷內(若手機尺寸太小時，方格內顯示的背景圖)
 --------------------------------------------------------------*/
+}
 
-  }
+.eboxshadow {
+  padding: 2000px;
+  margin: 20px 20px 20px 20px; /*上下左右外框距離*/
+  border-radius: 5px;
+}
+.eboxshadow2 {
+  padding: 20px; /*縮短對外距離*/
+  margin: 20px 20px 20px 20px; /*上下左右外框距離*/
+  border-radius: 5px;
+}
+.eboxshadow3 {
+  background-color: rgba(189, 196, 189, 0.226);
+  padding: 10px; /*縮短對外距離*/
+  margin: 20px 20px 20px 20px; /*上下左右外框距離*/
+  border-radius: 5px;
+}
 
-  .eboxshadow{
-    padding: 2000px;
-    margin: 20px 20px 20px 20px; /*上下左右外框距離*/
-    border-radius: 5px;
-  }
-  .eboxshadow2{
-    padding: 20px; /*縮短對外距離*/
-    margin: 20px 20px 20px 20px; /*上下左右外框距離*/
-    border-radius: 5px;
-  }
-  .eboxshadow3{
-    background-color: rgba(189, 196, 189, 0.226);
-    padding: 10px; /*縮短對外距離*/
-    margin: 20px 20px 20px 20px; /*上下左右外框距離*/
-    border-radius: 5px;
-  }
+.educational {
+  margin: 30px 0;
+}
 
+.educational h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-  .educational {
-    margin: 30px 0;
-  }
+.educational ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .educational h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.educational li {
+  margin-bottom: 20px;
+}
 
-  .educational ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.educational h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .educational li {
-    margin-bottom: 20px;
-  }
-
-  .educational h3 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .educational p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-  }
+.educational p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
 /*學歷*/
 .education {
   margin-bottom: 30px;
@@ -231,6 +232,10 @@ padding: 8px 28px;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.newbox {
+  margin: auto;
 }
 
 .education ul {
@@ -281,39 +286,49 @@ padding: 8px 28px;
 }
 
 /*學歷表格樣式*/
-  .edubox{
-    padding: 100px;
-    margin: 20px 20px 200px 200px; /*上下左右外框距離*/
-    border-radius: 5px;
-  }
+.edubox {
+  padding: 50px;
+  margin: 20px 20px 200px 200px; /*上下左右外框距離*/
+  border-radius: 5px;
+}
 
-  .cjcu{
-    width: 12%;
-    height:12%;
-  }
-  .cjcubox{
-    background-color: rgba(189, 196, 189, 0.226);
-    padding:0px; /*縮短對外距離*/
-    border-radius: 50%;
+.cjcu {
+  width: 12%;
+  height: 12%;
+}
+.cjcubox {
+  background-color: rgba(189, 196, 189, 0.226);
+  padding: 0px; /*縮短對外距離*/
+  border-radius: 50%;
+}
 
-  }
-
-
-  .sen{
-    border-image:linear-gradient(90deg,rgba(90,90,90,0),rgba(90,90,90,1),rgba(90,90,90,0)) 100% 0;
-border-width:3px;
-height:80px;
-  }
-  .box{
-	  width: 300px;height:60px;margin: auto;
-	  background: #eee;
-	  border: 5px solid transparent;
-	}
-.border-img{
-       -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
-	  -webkit-border-image: -webkit-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
-	          border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
-	  border-image-slice: 1;
+.sen {
+  border-image: linear-gradient(
+      90deg,
+      rgba(90, 90, 90, 0),
+      rgba(90, 90, 90, 1),
+      rgba(90, 90, 90, 0)
+    )
+    100% 0;
+  border-width: 3px;
+  height: 80px;
+}
+.box {
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  background: #eee;
+  border: 5px solid transparent;
+}
+.border-img {
+  -moz-border-image: -moz-linear-gradient(top left, #3acfd5 0%, #3a4ed5 100%);
+  -webkit-border-image: -webkit-linear-gradient(
+    top left,
+    #3acfd5 0%,
+    #3a4ed5 100%
+  );
+  border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
 }
 .box2 {
   border: 4px solid;
@@ -322,58 +337,76 @@ height:80px;
 
 /* 或者 */
 .box3 {
-  width:300px;margin:auto;
+  width: 300px;
+  margin: auto;
   border: 4px solid;
-  border-image-source: linear-gradient(to top left, #bdc3c775 0%, #2c3e501d 100%);
+  border-image-source: linear-gradient(
+    to top left,
+    #bdc3c775 0%,
+    #2c3e501d 100%
+  );
   border-image-slice: 1;
   border-radius: 30%;
 }
 
 /*底線*/
-.uline{
+.uline {
   position: relative;
   padding: 0.25em 0;
   font-weight: bold;
-  }
-  .uline:after {
-  content: "";
+}
+.uline:after {
+  content: '';
   display: block;
-  width:60%;
+  width: 60%;
   margin: auto;
   height: 4px;
-  background-image: linear-gradient(to right, #e14fae46 0%, #f9d5233b 100%);  /* 自訂的顏色1與自訂的顏色2 */
-  }
-  .uline2{
-    position: relative;
-    padding: 0.25em 0;
-    font-weight: bold;
-    }
-    .uline2:after {
-    content: "";
-    display: block;
-    width:60%;
-    margin: auto;
-    height: 4px;
-    background-image: linear-gradient(to right, #f9d5233b 0%, #e14fae46 100%);  /* 自訂的顏色1與自訂的顏色2 */
-    }
-    .uline3{
-      position: relative;
-      padding: 0.25em 0;
-      font-weight: bold;
-      }
-      .uline3:after {
-      content: "";
-      display: block;
-      width:48%;
-      margin: auto;
-      height: 4px;
-      background-image: linear-gradient(to right, #654ea35d 0%, #eaafc851 50%,#654ea35d 100%);  /* 自訂的顏色1與自訂的顏色2 */
-      }
+  background-image: linear-gradient(
+    to right,
+    #e14fae46 0%,
+    #f9d5233b 100%
+  ); /* 自訂的顏色1與自訂的顏色2 */
+}
+.uline2 {
+  position: relative;
+  padding: 0.25em 0;
+  font-weight: bold;
+}
+.uline2:after {
+  content: '';
+  display: block;
+  width: 60%;
+  margin: auto;
+  height: 4px;
+  background-image: linear-gradient(
+    to right,
+    #f9d5233b 0%,
+    #e14fae46 100%
+  ); /* 自訂的顏色1與自訂的顏色2 */
+}
+.uline3 {
+  position: relative;
+  padding: 0.25em 0;
+  font-weight: bold;
+}
+.uline3:after {
+  content: '';
+  display: block;
+  width: 48%;
+  margin: auto;
+  height: 4px;
+  background-image: linear-gradient(
+    to right,
+    #654ea35d 0%,
+    #eaafc851 50%,
+    #654ea35d 100%
+  ); /* 自訂的顏色1與自訂的顏色2 */
+}
 
 /*邊框動畫*/
-.box-wrap{
-  width:270px;
-  height:70px;
+.box-wrap {
+  width: 270px;
+  height: 70px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -382,40 +415,43 @@ height:80px;
   transform: translate(-50%, -50%);
 }
 /* 作为边框的旋转层 */
-.box-wrap .border-layer{
-  background-image:
-      conic-gradient(
-          from 45deg,
-          #ffbe44 0deg 90deg,
-          #5DADE2 90deg 180deg,
-          #ee5732 180deg 270deg,
-          #2ECC71 270deg 360deg
-      );
-  position:absolute;
-  left:50%;
-  top:50%;
-  width:370px;
-  height:370px;
-  margin-left:-185px;
-  margin-top:-185px;
-  animation:6s infinite linear rotate;
+.box-wrap .border-layer {
+  background-image: conic-gradient(
+    from 45deg,
+    #ffbe44 0deg 90deg,
+    #5dade2 90deg 180deg,
+    #ee5732 180deg 270deg,
+    #2ecc71 270deg 360deg
+  );
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 370px;
+  height: 370px;
+  margin-left: -185px;
+  margin-top: -185px;
+  animation: 6s infinite linear rotate;
 }
 /* 旋转动画 */
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* 内容层 */
-.box-wrap .box-content{
-  width:260px;
-  height:62px;
-  background-color:#fff;
+.box-wrap .box-content {
+  width: 260px;
+  height: 62px;
+  background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
   position: absolute;
-  top:4px;
-  left:4px;
-  padding:10px;
+  top: 4px;
+  left: 4px;
+  padding: 10px;
   box-sizing: border-box;
 }
 /*--------------------------------------------------------------
@@ -426,7 +462,7 @@ height:80px;
   padding-top: 20%;
 }
 .btnp {
-  background-color: #FFB80C;
+  background-color: #ffb80c;
   text-decoration: none;
   color: #1e1e1e;
   padding: 16px;
@@ -466,7 +502,7 @@ h3 {
   color: #888;
 }
 
-.close-btn{
+.close-btn {
   width: 5050px;
   height: 5050px;
   display: inline-block;
@@ -482,7 +518,8 @@ h3 {
   font-size: 32px;
 }
 
-.transform-in, .transform-out {
+.transform-in,
+.transform-out {
   display: block;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -497,18 +534,18 @@ h3 {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
   transform: translate(-50%, -50%) scale(0.5);
 }
-.divpop{
+.divpop {
   font-weight: bold;
-  font-family: "Times New Roman",微軟正黑體;
+  font-family: 'Times New Roman', 微軟正黑體;
 }
-.divpop2{
-  font-family: "Times New Roman",標楷體;
+.divpop2 {
+  font-family: 'Times New Roman', 標楷體;
   font-size: larger;
 }
 /*經歷彈跳視窗內小ICON*/
-.limg{
-  width:30px;
-  height:30px;
+.limg {
+  width: 30px;
+  height: 30px;
 }
 
 /*邊框縮放動畫*/
@@ -528,39 +565,42 @@ h3 {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-  80% {outline: 4px solid rgb(48, 202, 210);}
+  80% {
+    outline: 4px solid rgb(48, 202, 210);
+  }
 }
 
 /* Standard syntax */
 @keyframes mymove {
-  50% {outline: 4px solid rgb(145, 201, 84);}
+  50% {
+    outline: 4px solid rgb(145, 201, 84);
+  }
 }
 
-
-.left-right a{
-  position:relative;
+.left-right a {
+  position: relative;
 }
-.left-right a::after{
-  content:"";
-  display:block;
+.left-right a::after {
+  content: '';
+  display: block;
   width: 0;
   height: 4px;
   background-color: #f00;
-  position:absolute;
+  position: absolute;
   right: 0;
-  transition:.4s;
+  transition: 0.4s;
 }
-.left-right a:hover::after{
+.left-right a:hover::after {
   width: 100%;
   left: 0;
 }
 
 /* 顏色漸變框 */
-h2.itembox{
+h2.itembox {
   border: 5px solid;
-  border-image: linear-gradient(45deg,gold,deeppink) 1;
+  border-image: linear-gradient(45deg, gold, deeppink) 1;
   clip-path: inset(0px round 10px);
-  animation:huerotate 6s infinite linear;
+  animation: huerotate 6s infinite linear;
   margin: auto;
   padding-top: 5px;
   width: 220px;
@@ -568,22 +608,22 @@ h2.itembox{
   text-align: center;
   position: relative;
   overflow: hidden;
-  filter:hue-rotate(360deg);
+  filter: hue-rotate(360deg);
 }
 @keyframes huerotate {
-  0%{
-    filter:hue-rotate(0deg);
+  0% {
+    filter: hue-rotate(0deg);
   }
-  100%{
-    filter:hue-rotate(360deg);
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
 
-a.itembox{
+a.itembox {
   border: 5px solid;
-  border-image: linear-gradient(45deg,gold,deeppink) 1;
+  border-image: linear-gradient(45deg, gold, deeppink) 1;
   clip-path: inset(0px round 10px);
-  animation:huerotate 6s infinite linear;
+  animation: huerotate 6s infinite linear;
   margin: auto;
   padding-top: 5px;
   width: 220px;
@@ -591,14 +631,14 @@ a.itembox{
   text-align: center;
   position: relative;
   overflow: hidden;
-  filter:hue-rotate(360deg);
+  filter: hue-rotate(360deg);
 }
 @keyframes huerotate {
-  0%{
-    filter:hue-rotate(0deg);
+  0% {
+    filter: hue-rotate(0deg);
   }
-  100%{
-    filter:hue-rotate(360deg);
+  100% {
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -608,7 +648,7 @@ a.itembox{
   height: 300px;
   border-radius: 20%;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
-  background: #d3c0b08d;
+  background: #c19c7ebc;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -629,7 +669,7 @@ a.itembox{
 }
 
 .wave {
-  background: #f5c0953e;
+  background: #f5c095a4;
   width: 500px;
   height: 500px;
   border-radius: 40%;
@@ -662,6 +702,6 @@ a.itembox{
 }
 
 /* 專業技能 字體間距 */
-.skpt{
-padding-left: 10px;
+.skpt {
+  padding-left: 10px;
 }
