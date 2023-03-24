@@ -45,6 +45,22 @@
     font-size:x-large
 }
 
+/*補title裡面字體的樣式*/
+/*補title裡面字體的樣式*/
+.menu .title span {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.menu ul li {
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+.menu ul li:hover {
+  background-color: #e29e9e;
+  color: #4a4a4a;
+}
 /*--------------------------------------------------------------
 專業能力
 --------------------------------------------------------------*/
@@ -613,7 +629,7 @@ a.itembox{
 }
 
 .wave {
-  background: #f5c09500;
+  background: #f5c0953e;
   width: 500px;
   height: 500px;
   border-radius: 40%;
@@ -643,4 +659,9 @@ a.itembox{
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* 專業技能 字體間距 */
+.skpt{
+padding-left: 10px;
 }
